@@ -10,13 +10,13 @@ pyinstaller --onefile --hidden-import=waitress app.py
 ## Install the Windows Service
 
 ```sh
-sc create FlaskService binPath= "C:\path\to\app.exe" start= auto DisplayName= "Flask Service" 
+sc create FlaskBin binPath= "C:\path\to\app.exe" start= auto DisplayName= "FlaskBin" 
 ```
 
 ## Start the Windows service
 
 ```sh
-sc start FlaskService
+sc start FlaskBin # Service name
 ```
 
 ## Use the batch  file to create and start the service
